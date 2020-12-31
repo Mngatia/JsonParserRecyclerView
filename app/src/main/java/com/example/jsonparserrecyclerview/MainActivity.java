@@ -72,7 +72,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //13. Calling the CustomerAdapter to send the reference and data to adapter
-        CustomAdapter
+        CustomAdapter customAdapter = new CustomAdapter(personNames, emailIds, mobileNumbers, MainActivity.this);
+        recyclerView.setAdapter(customAdapter);
 
 
     }
